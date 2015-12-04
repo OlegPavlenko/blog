@@ -146,7 +146,7 @@ textarea {
 	min-height: 20em;
 }
 
-input[type="submit"] {
+input[type="submit"], .button {
 	padding: 1em 2em;
 	font-size: 1em;
 	text-align: center;
@@ -159,6 +159,18 @@ input[type="submit"] {
 		color: $highlight;
 		border: 2px solid $highlight;
 	}
+}
+
+.button_wrapper {
+	margin: 4em 0 0 0;
+	text-align: center;
+}
+
+.project_button {
+	padding: 1em 2em;
+	color: $white;
+	text-decoration: none;
+	background: $highlight;
 }
 
 @import 'welcome';
