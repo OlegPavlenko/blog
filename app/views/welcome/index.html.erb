@@ -1,0 +1,27 @@
+<div class="wrapper wrapper_padding clearfix">
+		<div class="col-1 about homepage_content">
+			<h2>About</h2>
+			<hr>
+			<p>Tattooed direct trade crucifix cliche Brooklyn banh mi flannel.</p>
+			<p>Cred Truffaut mumblecore, hashtag lo-fi trust fund street art selfies fixie <a href="#">Vice</a> pour-over deep v freegan Etsy. Street art distillery raw denim, <a href="#">High Life</a> tofu fixie cronut tilde Intelligentsia.</p>
+			<p>Flexitarian chillwave four loko health goth Godard, polaroid photo booth jean shorts <a href="#">Portland</a>.</p>
+		</div>
+		<div class="col-2 homepage_content">
+			<h2>Stuff I've Written</h2>
+			<hr>
+			<% @posts.each do |post| %>
+				<h3><a href="article_show.html"><%= link_to post.title, post %></a></h3>
+				<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+			<% end %>
+		</div>
+		<div class="col-3 homepage_content">
+			<h2>Stuff I've Built</h2>
+			<hr>
+			<h3><a href="#">Unicasts</a></h3>
+			<p class="date">Friday April 10th</p>
+			<h3><a href="#">The Fuck GG Community</a></h3>
+			<p class="date">Friday April 10th</p>
+			<h3><a href="#">12 in 12 Challenge</a></h3>
+			<p class="date">Friday April 10th</p>
+		</div>
+	</div>
