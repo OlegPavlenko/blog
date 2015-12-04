@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
 	before_action :find_post, only: [:show, :edit, :update, :destroy]
-
+	#Assigns all posts to @posts array
 	def index
+		@posts = Post.all.order("created_at desc")
 	end
 	#Allows us to create new posts inside of our form
 	def new
